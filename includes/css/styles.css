@@ -1,0 +1,109 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+   #myslider{
+     padding-top: 30px;
+   }
+   #slide1{
+     height: 300px;
+   }
+
+body{
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+#refer{
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   #searchInput{
+     width: 350px;
+   }
+
+  .navbar-brand{
+    padding:13px 15px;
+  }
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel{
+  margin-top: 60px;
+}
+.carousel-caption{
+  font-size: 24px;
+}
+.carousel-caption h4{
+  font-size: 32px;
+}
+#myCarousel .item{
+  height: 500px;
+}
+
+#abhyas{
+  color:red;
+}
+
+
+#jumbo{
+  image-orientation: center center;
+  background: red;
+}
+
+.myfooter{
+  background: gray;
+  padding: 0px;
+}
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #myCarousel .item{
+    height: 760px;
+  }
+
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #myCarousel .item{
+    height: 500px;
+  }
+
+}
