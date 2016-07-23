@@ -21,82 +21,104 @@
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	</head>
 	<body>
 		<div class="container" id="main">
 
 			<div class="navbar navbar-fixed-top">
-					<div class="container">
-						<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse"
-						type="button">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+				<div class="container">
 
-						</button>
-						<a class="navbar-brand" href="/"><img src="images/polo.png" alt="Abhyaas"></a>
-						<div class="nav-collapse collapse navbar-responsive-collapse">
-							<ul class="nav navbar-nav">
-								<li class="active">
-									<a href="#">Home</a>
-								</li>
-								<li class="dropdown">
-									<a href="#"class="dropdown-toggle"
-									 data-toggle="dropdown">Services
-									<strong class="caret"></strong></a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">Web Design</a>
-										</li>
-										<li>
-											<a href="#">Web Development</a>
-										</li>
-										<li>
-											<a href="#">SEO</a>
-										</li>
-										<li class="divider">
-											<li class="dropdown-header">More Services</li>
-											<li>
-												<a href="#">Content Creation</a>
-											</li>
-											<li>
-												<a href="#">Social Media Marketing</a>
-											</li>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<form class="navbar-form pull-left">
-								<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
-								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-							</form>
-							<ul class="nav navbar-nav pull-right">
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="/"><img src="images/polo.png" alt="Your Logo"></a>
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
 									<li>
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-											<span class="glyphicon glyphicon-user"></span> My Account<strong class="caret"></strong></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
-											</li>
-											<li>
-												<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
-											</li>
-											<li>
-												<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
-											</li>
-											<li class="divider"></li>
-											<li>
-												<a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
-											</li>
-										</ul>
+										<a href="#">Web Design</a>
 									</li>
-							</ul><!--end nav pull-right-->
-						</div><!--end nav-collapse-->
-					</div>
-			</div>
+
+									<li>
+										<a href="#">Web Development</a>
+									</li>
+
+									<li>
+										<a href="#">SEO</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li class="dropdown-header">More Services</li>
+
+									<li>
+										<a href="#">Content Creation</a>
+									</li>
+
+									<li>
+										<a href="#">Social Media Marketing</a>
+									</li>
+									<li class="divider"></li>
+
+									<li class="dropdown-header">More Services</li>
+									<li>
+										<a href="portfolio.html">Photo Gallery</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+						</ul>
+
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- end nav pull-right -->
+					</div><!-- end nav-collapse -->
+
+				</div><!-- end container -->
+			</div><!-- end navbar -->
+</div>
+
 
 			<div class="container" id="myslider">
 			 <div class="carousel slide" id="myCarousel">
@@ -109,7 +131,7 @@
 					<!--wrapper for slide-->
 					<div class="carousel-inner">
 						<div class="item active" id="slide1">
-							<img src="images/bts.jpg" alt="bootstrap">
+						<img src="images/bts.jpg" alt="bootstrap">
 							<div class="carousel-caption">
 								<h4>Bootstrap 3</h4>
 								<p>Learn about Bootstrap 3 for making responsive websites...!</p>
@@ -117,7 +139,7 @@
 						</div>
 
 						<div class="item" id="slide2">
-							<img src="images/htm.jpg" alt="html5">
+						<img src="images/htm.jpg" alt="html5">
 							<div class="carousel-caption">
 								<h4>HTML5 and CSS</h4>
 								<p>Learn about HTML and CSS for making responsive websites...!</p>
@@ -125,7 +147,7 @@
 						</div>
 
 						<div class="item" id="slide3">
-							<img src="images/js.jpg" alt="javascript">
+						<img src="images/js.jpg" alt="javascript">
 							<div class="carousel-caption">
 								<h4>Javascript</h4>
 								<p>Learn about Javascript for writing scripts...!</p>
@@ -148,9 +170,24 @@
 						<p class="lead">We are providing the courses tagged below. We are providing a full hands on coaching.</p>
 					</div>
 			 </div><!--end features heading-->
+
 		 </div>
 
+		 <div class="container">
+  <h3>Training</h3>
+  <a href="#" data-toggle="popover" title="For Freshers" data-content="Java,ASP.Net,PHP,Python">Click here...</a>
+</div>
 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+<div class="container">
+<div class="page-header">
+  <h1>Incredible Technologies <small>For Incredible world</small></h1>
+</div>
+</div>
 			 <div class="container">
 			 <div class="row" id="features">
 				 <div class="col-sm-4 feature">
@@ -174,7 +211,7 @@
  					 <div class="panel-heading">
  						 <h3 class="panel-title">HTML5</h3>
  					 </div>
- 						 <img src="images/miga.jpg" alt="html5">
+ 						<img src="images/miga.jpg" alt="html5">
  						 <p>
  							 HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications.[5] For the same reasons, HTML5 is also a candidate for cross-platform mobile applications.HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents.
  						 </p>
@@ -189,7 +226,7 @@
 				 <div class="panel-heading">
 					 <h3 class="panel-title">JAVASCRIPT</h3>
 				 </div>
-					 <img src="images/js1.jpg" alt="Javascript">
+					<img src="images/js1.jpg" alt="Javascript">
 					 <p>
 							JavaScript  is a high-level, dynamic,and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content production;the majority of websites employ it and it is supported by all modern browsers without plug-ins.
 					 </p>
@@ -200,10 +237,93 @@
 	</div><!--end feature-->
 	</div>
 </div>
+<div class="container" id="mymodal">
+	<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click for Opportunities</a>
+
+</div>
+
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+
+				<h4 class="modal-title"><strong>OPPORTUNITIES</strong></h4>
+			</div><!--end of modal-header-->
+			<div class="modal-body">
+
+				<h4>Enter Your Details</h4>
+
+				<hr>
+
+				<p><small class="text-muted">Give your details for apply. </small></p>
+
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputName">Name</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputName" placeholder="Name" type="text">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+						<div class="col-lg-10">
+							<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+						<div class="col-lg-10">
+							<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+							<button class="btn btn-success pull-right" type="submit">Send!</button>
+						</div>
+					</div>
+				</form>
+				</div><!--modal-body-->
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal"
+				type="button">Close</button><button class="btn btn-primary" type="button">Save Changes</button>
+			</div>
+		</div><!--end of modal-content-->
+	</div><!--end of modal-dialog-->
+</div><!--end of myModal-->
 <div class="container">
 	<div class="jumbotron" id="jumbo">
 		<img src="images/bts.png" alt="jumbo">
 	</div>
+</div>
+
+<div class="container">
+	<div class="tabbable">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+			<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="tab1">
+				<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>More like our favourite surf spot</small></h4>
+
+				<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=waikiki+beach&amp;aq=&amp;sll=19.896766,-155.582782&amp;sspn=8.711424,11.854248&amp;ie=UTF8&amp;hq=&amp;hnear=Waikiki+Beach,+Honolulu,+Hawaii,+United+States&amp;t=m&amp;ll=21.277298,-157.8265&amp;spn=0.015996,0.036478&amp;z=14&amp;output=embed"></iframe>
+
+				<p>Bangalore , officially known as Bengaluru, is the capital of the Indian state of Karnataka. It has a population of about 8.42 million and a metropolitan population of about 8.52 million, making it the third most populous city and fifth most populous urban agglomeration in India. Located in southern India on the Deccan Plateau, at a height of over 900 m (3,000 ft) above sea level, Bangalore is known for its pleasant climate throughout the year. Its elevation is the highest among the major large cities of India</p>
+
+			</div><!-- end tab-pane -->
+
+			<div class="tab-pane" id="tab2">
+				<h4>ISO Cirtified Company <small>9001-2008</small></h4>
+
+				<img src="images/iso.png" class="thumbnail pull-left" alt="Placeholder image">
+
+				<p>The ISO 9000 family of quality management systems standards is designed to help organizations ensure that they meet the needs of customers and other stakeholders while meeting statutory and regulatory requirements related to a product. ISO 9000 deals with the fundamentals of quality management systems, including the eight management principles upon which the family of standards is based.ISO 9001 deals with the requirements that organizations wishing to meet the standard must fulfill</p>
+
+				<p>Third-party certification bodies provide independent confirmation that organizations meet the requirements of ISO 9001. Over one million organizations worldwide are independently certified, making ISO 9001 one of the most widely used management tools in the world today. However, the ISO certification process has been criticized as being wasteful and not being useful for all organizations.</p>
+
+
+			</div><!-- end tab-pane -->
+		</div><!-- end tab-content -->
+	</div><!-- end tabbable -->
 </div>
 			 <div class="row" id="moreInfo">
 
@@ -214,6 +334,10 @@
 			 </div>
 		</div><!--end container-->
 
+</div>
+</div>
+</div>
+<div class="container">
 		<footer class="myfooter">
             <div class="container">
                 <div class="row">
@@ -259,7 +383,7 @@
                   </div>  <!--end of row-->
             </div><!--end of Container-->
             </footer><!--end of footer-->
-
+			</div>
 	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
 
 

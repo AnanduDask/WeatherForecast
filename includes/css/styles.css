@@ -36,6 +36,7 @@ body{
   padding-bottom: 10px;
 }
 
+
 /* --------------------------------------
    Navbar
    -------------------------------------- */
@@ -59,18 +60,22 @@ body{
   font-size: 32px;
 }
 #myCarousel .item{
-  height: 500px;
+  height: 1200px;
 }
 
 #abhyas{
   color:red;
 }
 
-
+#mymodal{
+  padding-bottom: 10px;
+}
 #jumbo{
   image-orientation: center center;
   background: red;
 }
+
+
 
 .myfooter{
   background: gray;
@@ -94,16 +99,34 @@ body{
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   #myCarousel .item{
-    height: 760px;
+    height: 310px;
   }
 
-
+  #slide1{
+    background: url('images/bts.jpg') top center no-repeat;
+  }
+  #slie2{
+    background: url('images/htm.jpg') top center no-repeat;
+  }
+  #slide3{
+    background: url('images/js.jpg') top center no-repeat;
+  }
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
   #myCarousel .item{
     height: 500px;
+  }
+
+  #slide1{
+    background: url('images/bts.jpg') top center no-repeat;
+  }
+  #slie2{
+    background: url('images/htm.jpg') top center no-repeat;
+  }
+  #slide3{
+    background: url('images/js.jpg') top center no-repeat;
   }
 
 }
