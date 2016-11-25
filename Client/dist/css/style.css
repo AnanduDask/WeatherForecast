@@ -1,0 +1,76 @@
+
+#lower1{     
+   margin: 40px;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=40);
+  border-spacing: 20px;
+  
+  /* For IE8 and earlier */
+ }
+
+#content-wrap{
+    float: left;
+      width: 100%;
+      border-spacing: 30px;
+      border-width: 30px;
+      column-count: 1;
+      border-style: 1px;
+
+    }
+
+ #search{
+  
+  margin-top: 100px;
+  width: 60%;
+  margin: 20%;
+ 
+
+ }
+
+ #btnSearch{
+  float: right;
+ }
+
+ .form-control{
+  width: 80%;
+  margin: 0;
+  display: inline;
+ }
+ .table-inverse
+ {
+  border-color:#272525;
+ }
+
+#tid{
+  text-align: center;
+}
+body{
+    margin-top: 30px;
+    background-image: url("../images/weather.jpg");
+    background-attachment: fixed;
+    width:100%;
+}
+
+.row{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  color:  #800000;
+  font:italic bold 50px/30px Georgia, serif;
+}
+
+
+#lower{
+    margin-top: 25px;
+
+}
+
+.glyphicon glyphicon-chevron-left {
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 80px;
+    float: left;
+}
+
+
